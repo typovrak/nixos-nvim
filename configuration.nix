@@ -30,6 +30,22 @@ in {
 		cp ${./catppuccin.lua} ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/catppuccin.lua
+		
+		mkdir ${home}/.local
+		chown ${username}:${group} ${home}/.local
+		chmod 700 ${home}/.local
+		
+		mkdir ${home}/.local/share
+		chown ${username}:${group} ${home}/.local/share
+		chmod 700 ${home}/.local/share
+
+		mkdir ${home}/.local/share/applications
+		chown ${username}:${group} ${home}/.local/share/applications
+		chmod 700 ${home}/.local/share/applications
+
+		cp ${./neovim.desktop} ${home}/.local/share/applications/neovim.desktop
+		chown ${username}:${group} ${home}/.local/share/applications/neovim.desktop
+		chmod 700 ${home}/.local/share/applications/neovim.desktop
 	'';
 	
 	environment.systemPackages = with pkgs; [
