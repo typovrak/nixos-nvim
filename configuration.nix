@@ -31,15 +31,18 @@ in {
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		
-		mkdir ${home}/.local
+		# files existing
+		mkdir -p ${home}/.local
 		chown ${username}:${group} ${home}/.local
 		chmod 700 ${home}/.local
 		
-		mkdir ${home}/.local/share
+		# files existing
+		mkdir -p ${home}/.local/share
 		chown ${username}:${group} ${home}/.local/share
 		chmod 700 ${home}/.local/share
 
-		mkdir ${home}/.local/share/applications
+		# files existing
+		mkdir -p ${home}/.local/share/applications
 		chown ${username}:${group} ${home}/.local/share/applications
 		chmod 700 ${home}/.local/share/applications
 
