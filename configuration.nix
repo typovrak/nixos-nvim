@@ -46,9 +46,9 @@ in {
 		chown ${username}:${group} ${home}/.local/share/applications
 		chmod 700 ${home}/.local/share/applications
 
-		cp ${./neovim.desktop} ${home}/.local/share/applications/neovim.desktop
-		chown ${username}:${group} ${home}/.local/share/applications/neovim.desktop
-		chmod 700 ${home}/.local/share/applications/neovim.desktop
+		cp ${pkgs.neovim}/share/applications/nvim.desktop ${home}/.local/share/applications/nvim.desktop
+		chown ${username}:${group} ${home}/.local/share/applications/nvim.desktop
+		chmod 700 ${home}/.local/share/applications/nvim.desktop
 	'';
 	
 	environment.systemPackages = with pkgs; [
