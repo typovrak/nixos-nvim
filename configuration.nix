@@ -76,7 +76,7 @@ in {
 		fzf
 		go
 		rustup
-		python
+		python3
 	];
 
 	programs.nix-ld.enable = true;
