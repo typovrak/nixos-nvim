@@ -247,7 +247,7 @@ return {
 			"black",
 			"gofumpt",
 			"goimports",
-			"rubocop",
+			"isort",
 			"rust-analyzer",
 			"stylua",
 			"lua_ls",
