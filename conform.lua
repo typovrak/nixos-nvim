@@ -17,7 +17,7 @@ return { -- Autoformat
 			lua = { "stylua" },
 			python = { "black" },
 			rust = { "rustfmt" },
-			go = { "goimports", "gofmt" },
+			go = { "goimports", "gofumpt" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",
