@@ -15,9 +15,10 @@ return { -- Autoformat
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "black" },
+			python = { "isort", "black" },
 			rust = { "rustfmt" },
 			go = { "goimports", "gofumpt" },
+			ruby = { "rubocop" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",
