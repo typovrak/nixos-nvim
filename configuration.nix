@@ -77,6 +77,7 @@ in {
 		go
 		rustup
 		python3
+		ruby
 	];
 
 	programs.nix-ld.enable = true;
