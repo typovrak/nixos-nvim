@@ -74,6 +74,7 @@ in {
 		xclip
 		copyq
 		fzf
+		go
 	];
 
 	programs.nix-ld.enable = true;

@@ -14,11 +14,8 @@ return { -- Autoformat
 	},
 	opts = {
 		formatters_by_ft = {
-			["*"] = { "codespell" },
-			["_"] = { "trim_whitespace" },
 			lua = { "stylua" },
 			python = { "black" },
-			nix = { "nixfmt" },
 			rust = { "rustfmt" },
 			go = { "goimports", "gofmt" },
 		},
