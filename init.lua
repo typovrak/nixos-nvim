@@ -4,6 +4,8 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
+vim.opt.scrolloff = 10
 
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
@@ -14,8 +16,6 @@ end)
 
 vim.opt.list = true
 vim.opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" }
-
-vim.opt.scrolloff = 10
 
 vim.opt.confirm = true
 

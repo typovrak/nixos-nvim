@@ -248,9 +248,9 @@ return {
 			"gofumpt",
 			"goimports",
 			"isort",
+			"lua_ls",
 			"rust-analyzer",
 			"stylua",
-			"lua_ls",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
