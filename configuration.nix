@@ -76,5 +76,7 @@ in {
 		fzf
 	];
 
+	services.printing.enable = true;
+
 	programs.nix-ld.enable = true;
 }
