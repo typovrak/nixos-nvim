@@ -75,6 +75,8 @@ in {
 		copyq
 		fzf
 		go
+		rustup
+		python
 	];
 
 	programs.nix-ld.enable = true;
