@@ -30,6 +30,42 @@ in {
 		cp ${./catppuccin.lua} ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/catppuccin.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/catppuccin.lua
+
+		cp ${./blink.lua} ${home}/.config/nvim/lua/plugins/blink.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/blink.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/blink.lua
+
+		cp ${./conform.lua} ${home}/.config/nvim/lua/plugins/conform.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/conform.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/conform.lua
+
+		cp ${./gitsigns.lua} ${home}/.config/nvim/lua/plugins/gitsigns.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/gitsigns.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/gitsigns.lua
+
+		cp ${./lazydev.lua} ${home}/.config/nvim/lua/plugins/lazydev.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/lazydev.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/lazydev.lua
+
+		cp ${./nvim-lspconfig.lua} ${home}/.config/nvim/lua/plugins/nvim-lspconfig.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/nvim-lspconfig.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/nvim-lspconfig.lua
+
+		cp ${./nvim-treesitter.lua} ${home}/.config/nvim/lua/plugins/nvim-treesitter.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/nvim-treesitter.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/nvim-treesitter.lua
+
+		cp ${./telescope.lua} ${home}/.config/nvim/lua/plugins/telescope.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/telescope.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/telescope.lua
+
+		cp ${./todo-comments.lua} ${home}/.config/nvim/lua/plugins/todo-comments.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/todo-comments.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/todo-comments.lua
+
+		cp ${./which-key.lua} ${home}/.config/nvim/lua/plugins/which-key.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/which-key.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/which-key.lua
 	'';
 	
 	environment.systemPackages = with pkgs; [
@@ -37,5 +73,6 @@ in {
 		neovim
 		xclip
 		copyq
+		fzf
 	];
 }
