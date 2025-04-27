@@ -75,4 +75,6 @@ in {
 		copyq
 		fzf
 	];
+
+	programs.nix-ld.enable = true;
 }
