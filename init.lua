@@ -17,6 +17,7 @@ end)
 vim.opt.list = true
 vim.opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" }
 
+vim.opt.mouse = ""
 vim.opt.confirm = true
 
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
