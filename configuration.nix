@@ -66,6 +66,10 @@ in {
 		cp ${./which-key.lua} ${home}/.config/nvim/lua/plugins/which-key.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/which-key.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/which-key.lua
+
+		cp ${./guess-indent.lua} ${home}/.config/nvim/lua/plugins/guess-indent.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/guess-indent.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/guess-indent.lua
 	'';
 	
 	environment.systemPackages = with pkgs; [
