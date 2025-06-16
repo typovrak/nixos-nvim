@@ -74,6 +74,10 @@ in {
 		cp ${./hardtime.lua} ${home}/.config/nvim/lua/plugins/hardtime.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/hardtime.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/hardtime.lua
+
+		cp ${./oil.lua} ${home}/.config/nvim/lua/plugins/oil.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/oil.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/oil.lua
 	'';
 	
 	environment.systemPackages = with pkgs; [
