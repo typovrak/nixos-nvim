@@ -70,6 +70,10 @@ in {
 		cp ${./guess-indent.lua} ${home}/.config/nvim/lua/plugins/guess-indent.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/guess-indent.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/guess-indent.lua
+
+		cp ${./hardtime.lua} ${home}/.config/nvim/lua/plugins/hardtime.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/hardtime.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/hardtime.lua
 	'';
 	
 	environment.systemPackages = with pkgs; [
