@@ -4,6 +4,9 @@ return {
 	---@type oil.SetupOpts
 	opts = {},
 	dependencies = { { "echasnovski/mini.icons", opts = {} } },
-	-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
 	lazy = false,
+	config = function()
+		require("oil").setup()
+		vim.keymap.set("n", "<Leader>o", "<cmd>Oil<CR>", { desc = "Open Oil", silent = true })
+	end,
 }
