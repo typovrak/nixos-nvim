@@ -251,6 +251,7 @@ return {
 			-- go
 			"gofumpt",
 			"goimports",
+			"gopls",
 			-- lua
 			"lua_ls",
 			"stylua",
