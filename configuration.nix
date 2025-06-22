@@ -74,6 +74,10 @@ in {
 		cp ${./oil.lua} ${home}/.config/nvim/lua/plugins/oil.lua
 		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/oil.lua
 		chmod 600 ${home}/.config/nvim/lua/plugins/oil.lua
+
+		cp ${./nvim-colorizer.lua} ${home}/.config/nvim/lua/plugins/nvim-colorizer.lua
+		chown ${username}:${group} ${home}/.config/nvim/lua/plugins/nvim-colorizer.lua
+		chmod 600 ${home}/.config/nvim/lua/plugins/nvim-colorizer.lua
 	'';
 	
 	environment.systemPackages = with pkgs; [
