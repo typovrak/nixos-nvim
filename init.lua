@@ -27,6 +27,12 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
+vim.keymap.set("n", "<Leader>mj", 'yiwoconsole.log();<Esc>hi"<Esc>pa:", <Esc>p', { desc = 'console.log("x:", x);' })
+vim.keymap.set("v", "<Leader>mj", 'yoconsole.log();<Esc>hi"<Esc>pa:", <Esc>p', { desc = 'console.log("x:", x);' })
+
+vim.keymap.set("n", "<Leader>mg", 'yiwofmt.Println()<Esc>i"<Esc>pa:", <Esc>p', { desc = 'fmt.Println("x:", x)' })
+vim.keymap.set("v", "<Leader>mg", 'yofmt.Println()<Esc>i"<Esc>pa:", <Esc>p', { desc = 'fmt.Println("x:", x)' })
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
